@@ -1,0 +1,22 @@
+{
+  "name": "anmatlib",
+  "version": "1.0.0",
+  "description": "Javascript math library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anisha7/anmatlib.git"
+  },
+  "author": "Anisha Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anisha7/anmatlib/issues"
+  },
+  "homepage": "https://github.com/Anisha7/anmatlib#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
