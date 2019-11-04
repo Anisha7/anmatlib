@@ -33,3 +33,10 @@ test('degToRad', () => {
     const y = "a"
     expect(() => y.degToRad()).toThrow(TypeError)
 });
+
+test('radToDeg', () => {
+    const x = 0.785
+    expect(x.radToDeg()).toBe(44.977)
+    const y = "a"
+    expect(() => y.degToRad()).toThrow(TypeError)
+});

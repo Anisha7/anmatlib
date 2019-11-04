@@ -43,3 +43,13 @@ Number.prototype.degToRad = function () {
     }
     return Number((this * (Math.PI/180)).toFixed(3))
 }
+
+//  Covert radians to degrees from this formula: radians * (180/pi)
+// throws error if the value input is not a number or is not included
+Number.prototype.radToDeg = function () {
+    if ( Number.isNaN(this) ) {
+        console.log("error")
+        throw new TypeError("Not a number");
+    }
+    return Number((this * (180/Math.PI)).toFixed(3))
+}
