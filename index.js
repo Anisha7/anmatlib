@@ -33,3 +33,13 @@ Number.prototype.pad = function (x, y) {
 
     return result.join('.')
 }
+
+// takes a number and returns the results of this formula: deg * (Math.PI / 180)
+// throws error if the value input is not a number or is not included
+Number.prototype.degToRad = function () {
+    if ( Number.isNaN(this) ) {
+        console.log("error")
+        throw new TypeError("Not a number");
+    }
+    return Number((this * (Math.PI/180)).toFixed(3))
+}

@@ -26,3 +26,10 @@ test('pad', () => {
     const y = 34.801
     expect(y.pad(4,3)).toBe('0034.801');
 });
+
+test('degToRad', () => {
+    const x = 45
+    expect(x.degToRad()).toBe(0.785)
+    const y = "a"
+    expect(() => y.degToRad()).toThrow(TypeError)
+});
