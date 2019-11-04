@@ -40,3 +40,10 @@ test('radToDeg', () => {
     const y = "a"
     expect(() => y.degToRad()).toThrow(TypeError)
 });
+
+test('toDollars', () => {
+    const x = 34.801
+    expect(x.toDollars()).toBe('$34.80');
+    const y = 2
+    expect(y.toDollars(4,3)).toBe('$2.00');
+});
