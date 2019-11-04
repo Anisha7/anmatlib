@@ -19,3 +19,10 @@ test('ceil', () => {
     const x = 1.03
     expect(x.ceil()).toBe(2);
 });
+
+test('pad', () => {
+    const x = 34.801
+    expect(x.pad(4,4)).toBe('0034.8010');
+    const y = 34.801
+    expect(y.pad(4,3)).toBe('0034.801');
+});
