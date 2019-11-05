@@ -86,15 +86,15 @@ Number.prototype.intToHex = function () {
 
 // returns an integer from 0 to n - 1
 Number.random = function (n) {
-    return
+    return Math.floor(Math.random() * Math.floor(n))
 }
 
 // returns an integer between min and max
 Number.randomRange = function (min, max) {
-    return
+    return Math.random()* (max - min) + min
 }
 
 // returns a random hex color
 Number.randomColor = function () {
-    return
+    return Number.random().intToHex()
 }

@@ -67,5 +67,11 @@ test('intToHex', () => {
 });
 
 test('random functions', () => {
-    expect(true).toBe(true)
+    expect(Number.random(5) < 5).toBe(true)
+    const x = Number.randomRange(2, 5)
+    expect(x < 5).toBe(true)
+    expect(x > 2).toBe(true)
+
+    const a = parseInt(Number.randomColor(),16);
+    expect(a.toString(16) === h).toBe(true)
 });
