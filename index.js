@@ -54,3 +54,47 @@ Number.prototype.radToDeg = function () {
 Number.prototype.toDollars = function () {
     return '$' + this.toFixed(2).toString()
 }
+
+// Returns the tax amount
+Number.prototype.tax = function (rate) {
+    return this + rate
+}
+
+// calculates the interest over time
+// https://stackoverflow.com/questions/28325001/how-to-calculate-interest-javascript
+Number.interest = function (total, year, rate) {
+    let interest = rate/100+1;
+    return parseFloat((total*Math.pow(interest,year)).toFixed(4))
+}
+
+// Number.interest(n)
+
+// calculates mortage
+// M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1]
+// https://stackoverflow.com/questions/17101442/how-to-calculate-mortgage-in-javascript
+Number.mortage = function (principal, numberOfPayments, interestRate) {
+    const n = principal * interestRate * (Math.pow(1 + interestRate, numberOfPayments))
+    const d = Math.pow(1 + interestRate, numberOfPayments) - 1
+    return n / d
+}
+
+// converts int to hex
+// https://stackoverflow.com/questions/57803/how-to-convert-decimal-to-hexadecimal-in-javascript
+Number.prototype.intToHex = function () {
+    return this.toString(16)
+}
+
+// returns an integer from 0 to n - 1
+Number.random = function (n) {
+    return
+}
+
+// returns an integer between min and max
+Number.randomRange = function (min, max) {
+    return
+}
+
+// returns a random hex color
+Number.randomColor = function () {
+    return
+}
