@@ -114,3 +114,37 @@ x > 2 // true`
 Returns a random hex color
 
 `const a = Number.randomColor() // returns a random color in hex`
+
+
+## Test coverage
+
+`npx jest --coverage  ` 
+ PASS  ./test.js
+  ✓ goldenRatio (4ms)
+  ✓ round (1ms)
+  ✓ floor
+  ✓ ceil
+  ✓ pad (1ms)
+  ✓ degToRad (3ms)
+  ✓ radToDeg (1ms)
+  ✓ toDollars
+  ✓ tax (1ms)
+  ✓ interest
+  ✓ mortage
+  ✓ intToHex (1ms)
+  ✓ random functions (9ms)
+
+  console.log test.js:76
+    62d839
+
+----------|----------|----------|----------|----------|-------------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |    90.48 |       50 |      100 |    90.48 |                   |
+ index.js |    90.48 |       50 |      100 |    90.48 |       36,37,46,47 |
+----------|----------|----------|----------|----------|-------------------|
+Test Suites: 1 passed, 1 total
+Tests:       13 passed, 13 total
+Snapshots:   0 total
+Time:        2.103s
+Ran all test suites.
