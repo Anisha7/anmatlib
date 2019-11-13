@@ -72,6 +72,8 @@ test('random functions', () => {
     expect(x < 5).toBe(true)
     expect(x > 2).toBe(true)
 
-    const a = parseInt(Number.randomColor(),16);
+    const h = Number.randomColor()
+    console.log(h)
+    const a = parseInt(h,16);
     expect(a.toString(16) === h).toBe(true)
 });

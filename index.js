@@ -96,5 +96,5 @@ Number.randomRange = function (min, max) {
 
 // returns a random hex color
 Number.randomColor = function () {
-    return Number.random().intToHex()
+    return Number.random(255*255*255).intToHex()
 }
